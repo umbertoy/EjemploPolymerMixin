@@ -1,0 +1,26 @@
+{
+  "name": "ejemplo-polymer-mixin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/umbertoy/EjemploPolymerMixin.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/umbertoy/EjemploPolymerMixin/issues"
+  },
+  "homepage": "https://github.com/umbertoy/EjemploPolymerMixin#readme",
+  "dependencies": {
+    "bower": "^1.8.4",
+    "polymer-cli": "^1.8.0"
+  }
+}
