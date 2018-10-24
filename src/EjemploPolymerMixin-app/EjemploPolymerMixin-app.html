@@ -1,0 +1,37 @@
+<link rel="import" href="../../bower_components/polymer/polymer-element.html">
+<link rel="import" href="../element-1.html">
+<link rel="import" href="../element-2.html">
+
+<dom-module id="ejemplo-polymer-app">
+  <template>
+    <style>
+      :host {
+        display: block;
+        --element-2-background-color: green;
+      }
+    </style>
+    <h2>Hello [[prop1]]!</h2>
+    <element-1></element-1>
+    <element-2></element-2>
+
+  </template>
+  <script>
+    /**
+     * @customElement
+     * @polymer
+     */
+    class EjemploPolymerMixinApp extends Polymer.Element {
+      static get is() { return 'ejemplo-polymer-app'; }
+      static get properties() {
+        return {
+          prop1: {
+            type: String,
+            value: 'EjemploPolymerMixin-app'
+          }
+        };
+      }
+    }
+
+    window.customElements.define(EjemploPolymerMixinApp.is, EjemploPolymerMixinApp);
+  </script>
+</dom-module>

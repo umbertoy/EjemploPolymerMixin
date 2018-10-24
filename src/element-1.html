@@ -1,0 +1,35 @@
+<link rel="import" href="../bower_components/polymer/polymer-element.html">
+
+<dom-module id="element-1">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+      h2{
+        background-color: brown;
+      }
+    </style>
+    <h2>Hello [[prop1]]!</h2>
+  </template>
+
+  <script>
+    /**
+     * @customElement
+     * @polymer
+     */
+    class Element1 extends Polymer.Element {
+      static get is() { return 'element-1'; }
+      static get properties() {
+        return {
+          prop1: {
+            type: String,
+            value: 'element-1'
+          }
+        };
+      }
+    }
+
+    window.customElements.define(Element1.is, Element1);
+  </script>
+</dom-module>
